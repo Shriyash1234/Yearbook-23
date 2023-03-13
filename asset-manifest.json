@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Yearbook-23/static/css/main.99303659.css",
-    "main.js": "/Yearbook-23/static/js/main.d2f0a323.js",
+    "main.js": "/Yearbook-23/static/js/main.9ab945b6.js",
     "static/js/787.468f20b0.chunk.js": "/Yearbook-23/static/js/787.468f20b0.chunk.js",
     "static/media/mine1 - RACHIT SHRIMAL 18110134.png": "/Yearbook-23/static/media/mine1 - RACHIT SHRIMAL 18110134.2be08f8ad2d1776edc4e.png",
     "static/media/DSC_0330 - Sagar Bisen.JPG": "/Yearbook-23/static/media/DSC_0330 - Sagar Bisen.50dd90e04cfea4fcdd20.JPG",
@@ -149,7 +149,6 @@
     "static/media/DSC_0280 - RITU VERMA 18110140.jpg": "/Yearbook-23/static/media/DSC_0280 - RITU VERMA 18110140.1d42e1c7a3d4fb726ccf.jpg",
     "static/media/IMG_8271-1 - Sakshi Baheti.jpg": "/Yearbook-23/static/media/IMG_8271-1 - Sakshi Baheti.7a5b1021d372a904a52f.jpg",
     "static/media/IMG-20210307-WA0049 - Deepika Khasa.jpg": "/Yearbook-23/static/media/IMG-20210307-WA0049 - Deepika Khasa.4ae778beb7f6eb1f55de.jpg",
-    "static/media/ADITI.jpg": "/Yearbook-23/static/media/ADITI.a3046d0cbca426744865.jpg",
     "static/media/IMG_20210127_125742__01 - ADITI GERA 18110008.jpg": "/Yearbook-23/static/media/IMG_20210127_125742__01 - ADITI GERA 18110008.a3046d0cbca426744865.jpg",
     "static/media/IMG20220413233304 - ASHISH KUMAR MEENA 18110028.jpg": "/Yearbook-23/static/media/IMG20220413233304 - ASHISH KUMAR MEENA 18110028.97a4c58c4b2d67fc46a1.jpg",
     "static/media/IMG_3820 - Maitreya Thakur.jpg": "/Yearbook-23/static/media/IMG_3820 - Maitreya Thakur.34afe561439269bfca84.jpg",
@@ -384,11 +383,11 @@
     "static/media/Sahil profile - SAHIL PURUSHOTTAM INGALE 18110150.jpg": "/Yearbook-23/static/media/Sahil profile - SAHIL PURUSHOTTAM INGALE 18110150.b0706550584619d981be.jpg",
     "index.html": "/Yearbook-23/index.html",
     "main.99303659.css.map": "/Yearbook-23/static/css/main.99303659.css.map",
-    "main.d2f0a323.js.map": "/Yearbook-23/static/js/main.d2f0a323.js.map",
+    "main.9ab945b6.js.map": "/Yearbook-23/static/js/main.9ab945b6.js.map",
     "787.468f20b0.chunk.js.map": "/Yearbook-23/static/js/787.468f20b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99303659.css",
-    "static/js/main.d2f0a323.js"
+    "static/js/main.9ab945b6.js"
   ]
 }
