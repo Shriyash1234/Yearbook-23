@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './App';
+import Home2 from './App2';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from './components/sidebar'
@@ -13,6 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index path="/Yearbook-23/students" component={Home} element={<Home />} />
+        <Route path="/Yearbook-23/students/:email" component={Home2} element={<Home2 />} />
         <Route path="/Yearbook-23" component={Students} element={<Students />}/>
           {/* <Route index component={Students} element={<Students />} /> */}
           <Route path="/main" component={Main} element={<Main />} />

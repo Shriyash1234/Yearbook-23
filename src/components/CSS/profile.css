@@ -173,6 +173,9 @@ em{
     }
 }
 @media  all and (max-width:606px) {
+    .rectangle{
+        height:83vh;
+    }
     .profile-photo{
         height: 50vw;
         right: 25vw;
@@ -184,9 +187,8 @@ em{
         text-align: center;
     }
     .bio{
-        padding-top: 43vw;
-        width: 80%;
-        text-align: center;
+        margin-top: 45vw;
+        height:18vh;
         font-size: 1.2rem;
     }
 }
@@ -202,9 +204,11 @@ em{
         text-align: center;
     }
     .bio{
-        padding-top: 53vw;
+        /* padding-top: 53vw;
         width: 80%;
-        text-align: center;
+        text-align: center; */
+        margin-top: 48vw;
+        height:22vh;
         font-size: 1.1rem;
     }
 }
@@ -220,9 +224,11 @@ em{
         text-align: center;
     }
     .bio{
-        padding-top: 65vw;
+        /* padding-top: 65vw;
         width: 80%;
-        text-align: center;
+        text-align: center; */
+        margin-top: 57vw;
+        height:25vh;
         font-size: 1.1rem;
     }
 }
