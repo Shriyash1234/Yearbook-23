@@ -1,0 +1,207 @@
+.student-profile{
+    background-color: #0b1d26;
+    height: 100vh;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-visible{
+    display: none;
+}
+.profile-box{
+    width:75%;
+    height: 80%;
+    background-color: #1e2f37;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 370px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.junior-messages-box{
+    width: 95%;
+    height: 95%;
+    background-color: #303f47;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.student-profile-photo{
+    width: 90%;
+    aspect-ratio: 1/1;
+    top: 0px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.student-profile-name{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+.student-profile-bio{
+    font-size: 1rem;
+    overflow-y: scroll;
+    height: 140px;
+    padding: 10px 15px;
+    color: #fff;
+}
+.student-profile-bio::-webkit-scrollbar {
+    display: none;
+}
+.Messages-heading{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 20px 20px 10px 35px;
+    margin-bottom: 0px;
+}
+.student-messages{
+    overflow: scroll;
+    height: 85%;
+    overflow-x: hidden;
+}
+.student-messages::-webkit-scrollbar{
+    display: none;
+}
+.message-photo{
+    text-align: left;
+    background-color: #1e2f37;
+    font-size: 1.1rem;
+    margin: 1vw 2vw;
+    padding: 1.4vw;
+    border-radius: 0% 30px 30px 30px ;
+    width:90%;
+    display: flex;
+    align-items: center;
+}
+.photogallery{
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 20px;
+}
+.side-photos{
+    width:15vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin:1vw;
+    border-radius: 7px;
+}
+.photogallery::-webkit-scrollbar{
+    display: none;
+}
+#message{
+    margin: 0vw 3vw 1vw 2vw !important;
+}
+.input-fields{
+    margin: 0vw 3vw 1vw 2vw !important;
+}
+#message,#name,#mailAddress{
+    background-color: #1e2f37;
+    border: 0px;
+}
+#name,#mailAddress{
+    padding-left:20px !important;
+}
+.hidden {
+    display: none !important;
+  }
+.btnn{
+    padding: 10px 40px !important;
+    border-radius: 10px !important;
+}
+
+   .response-photo{
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 30px;
+   }   
+@media all and (max-width:1300px) {
+    .profile-box{
+        width: 90%;
+        flex-direction: column;
+    }
+    .profile-box{
+        height: 90%;
+    }
+    .image-name-bio{
+        width: 100%;
+        height: 430px;
+    }
+    .junior-messages-box{
+        width: 95%;
+        height: 95%;
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 250px;
+    }
+    .junior-messages-box{
+        padding: 10px 10px 30px 10px;
+    }
+}
+@media all and (max-width:991px) {
+    .message-photo{
+        flex-direction: column;
+    }
+    .response-photo{
+        width: 70%;
+        aspect-ratio: 1/1;
+        border-radius: 0px;
+    }
+}
+@media all and (max-width:768px) {
+    .profile-box{
+        height: 88%;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .student-profile-name{
+        margin-bottom: 0rem;
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 220px;
+    }
+    .message-photo{
+        padding: 3vw;
+    }
+    .photogallery{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .side-photos{
+        width: 250px;
+    }
+}
+@media all and (max-width:479px) {
+    .profile-box{
+        height: 85%;
+        margin-top: 75px;
+    }
+    .student-profile-name{
+        margin-bottom: 0rem;
+        font-size: 1rem;
+    }
+    .student-profile-bio{
+        font-size: 0.9rem;
+        height: 90px;
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 180px;
+    }
+    .message-photo{
+        padding: 3vw;
+        margin: 3vw;
+        font-size: 0.9rem;
+    }
+    .Messages-heading{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 15px;
+    }
+}

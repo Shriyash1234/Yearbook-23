@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap');
+.team{
+    background-color: #0b1d26;
+    padding-left: 370px;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.Heading{
+    text-align: center;
+    padding-top: 10vh;
+    font-family: Raleway,sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+.team-message{
+    font-family: Montserrat;
+    padding:0vw 10vw;
+    font-size: 1.2vw;
+    text-align: center;
+}
+.team-cards{
+    display: flex;                                                          
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    width:300px;
+    height:400px;
+    background-color: #1e2f37 !important;
+    border-radius: 10px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;         
+}
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px cyan;
+}
+.team-photo{
+  align-self: center;
+    object-fit: cover;
+    width:220px;
+    border-radius:10px;
+    height: 220px;
+    margin-top: 20px;
+    border: 3px solid cyan;
+}
+.name{
+    color: #fff;
+    margin: 0px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: Raleway,sans-serif;
+    height: 2vw;
+    margin-top: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.position{
+    color: cyan;
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+/* social icons */
+.social-icons span{
+  padding-top: 10px;
+    display: flex;
+    justify-content:flex-start;
+  }
+  .social-icons span,.fa-brands {
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+  }
+
+  .social-icons span .fb1 {
+    padding: 6px 6px;
+    color: #fff;
+    border: 3px solid #fff;
+  }
+  .social-icons span .fb1:hover {
+    color: #1e2f37;
+    background-color: #fff;
+  }
+  
+  .social-icons span .insta1 {
+    padding: 6px 8px;
+    color: #fff;
+    border: 3px solid #fff;
+    /* border: 3px solid #e95950; */
+    /* background: linear-gradient(#1e2f37, #1e2f37) padding-box,
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%) border-box; */
+    border-radius: 19px;
+  }
+  .social-icons span .insta1:hover{
+    color: #1f2f37;
+    background-color: #fff;
+  }
+  
+  .social-icons span .youtube1 {
+    padding: 6px 6px;
+    color: #fff;
+    border: 3px solid #fff;
+  }
+  .social-icons span .youtube1:hover {
+    color: #1f2f37;
+    background-color: #fff;
+  }
+  .social-icons span .linkedin1{
+    padding: 6px 8px;
+    color: #fff;
+    border: 3px solid #fff;
+  }
+  .social-icons span .linkedin1:hover {
+    color: #1f2f37;
+    background-color: #fff;
+  }
+@media all and (max-width:768px) {
+  .team{
+    background-color: #181818;
+    padding-left: 0px;
+}
+  .position{
+    padding-top: 22px;
+  }
+  .name{
+    padding-bottom: 5px;
+  }
+}

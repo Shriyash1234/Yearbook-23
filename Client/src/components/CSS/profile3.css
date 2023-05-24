@@ -1,0 +1,334 @@
+.student-profile{
+    background-color: #0b1d26;
+    height: 100vh;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-box{
+    width:75%;
+    height: 80%;
+    background-color: #1e2f37;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 370px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+.build{
+    color: #fff;
+    color: #000;
+    position: fixed;
+    right: 30px;
+    padding: 15px;
+    z-index: 20;
+    margin-top:10px ;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.inactive{
+    color: #fff;
+    color: #000;
+    position: fixed;
+    right: 30px;
+    padding: 15px !important;
+    z-index: 20;
+    margin-top:10px ;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+}
+.image-name-bio{
+    width: 330px;
+}
+.messages-box{
+    width: calc(100% - 350px);
+    height: 95%;
+    background-color: #303f47;
+    border-radius: 10px;
+}
+.img-box{
+
+    display: flex;
+    flex-direction: column;
+}
+.student-profile-photo{
+    width: 90%;
+    aspect-ratio: 1/1;
+    top: 0px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.student-profile-name{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+.student-profile-bio{
+    font-size: 1rem;
+    overflow-y: scroll;
+    height: 140px;
+    padding: 10px 15px;
+    color: #fff;
+}
+.student-profile-bio::-webkit-scrollbar {
+    display: none;
+}
+.Messages-heading{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 20px 20px 10px 35px;
+    margin-bottom: 0px;
+}
+.student-messages{
+    overflow: scroll;
+    height: 80%;
+    overflow-x: hidden;
+}
+.student-messages::-webkit-scrollbar{
+    display: none;
+}
+.student-Message{
+    text-align: left;
+    background-color: #1e2f37;
+    font-size: 1.1rem;
+    margin: 1vw 2vw;
+    padding: 1.4vw;
+    border-radius: 0% 30px 30px 30px ;
+    width:90%;
+}
+.student-Message-photo{
+    padding: 1.4vw 0.5vw;
+}
+.photogallery{
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 20px;
+}
+.side-photos{
+    width:15vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin:1vw;
+    border-radius: 7px;
+}
+.photogallery::-webkit-scrollbar{
+    display: none;
+}
+.input-fields{
+    margin: 0vw 3vw 1vw 2vw !important;
+}
+#message,#students-field-message{
+    margin: 0vw 3vw 1vw 2vw !important;
+    margin: 0vw 5vw 1vw 2vw;
+    padding: 1vw;
+    border-radius: 30px 30px 30px 30px;
+    width: 90%;
+}
+
+#message,#name,#mailAddress{
+    color: #fff;
+    background-color: #1e2f37;
+    border: 0px;
+}
+#name,#mailAddress,#students-field-name,#students-field-mailAddress{
+    padding-left:20px !important;
+    width: 46%;
+    padding: 0.8vw;
+    border-radius: 30px;
+}
+#students-field-message,#students-field-name,#students-field-mailAddress{
+    background-color: #0b1d26;
+    color: #fff;
+    border: 0px;
+}
+.textField{
+    color: white;
+    padding-left: 50px;
+    width: 300px;
+    padding-bottom: 20px;
+}
+.uploading{
+    color: #fff;
+    margin: 0px;
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.upload-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-photo-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2f37;
+    padding: 15px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    width:90vw;
+}
+.hidden {
+    display: none !important;
+  }
+.btnn{
+    padding: 10px 40px !important;
+    border-radius: 10px !important;
+}
+.buttonn {
+    --color: cyan;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color:#000;
+    padding-bottom: 2.8rem;
+    margin: 0px;
+   }
+   
+   .buttonn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .buttonn:hover {
+    color: #fff;
+   }
+   
+   .buttonn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .buttonn:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .buttonn:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+@media all and (max-width:1300px) {
+    .profile-box{
+        width: 90%;
+        flex-direction: column;
+    }
+    .profile-box{
+        height: 90%;
+    }
+    .image-name-bio{
+        width: 100%;
+        height: 430px;
+    }
+    .messages-box{
+        width: 95%;
+        height: calc(100% - 450px);
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 250px;
+    }
+    .messages-box{
+        padding: 10px 10px 30px 10px;
+    }
+}
+@media all and (max-width:768px) {
+    .profile-box{
+        height: 88%;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .student-profile-name{
+        margin-bottom: 0rem;
+    }
+    .image-name-bio{
+        width: 100%;
+        height: 400px;
+    }
+    .messages-box{
+        width: 95%;
+        height: calc(100% - 420px);
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 220px;
+    }
+    .student-Message{
+        padding: 3vw;
+    }
+    .photogallery{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .side-photos{
+        width: 250px;
+    }
+    .inactive{
+        display: flex;
+    }
+    .build{
+        display: none;
+    }
+}
+@media all and (max-width:479px) {
+    .profile-box{
+        height: 85%;
+        margin-top: 75px;
+    }
+    .student-profile-name{
+        margin-bottom: 0rem;
+        font-size: 1rem;
+    }
+    .student-profile-bio{
+        font-size: 0.9rem;
+        height: 90px;
+    }
+    .image-name-bio{
+        width: 100%;
+        height: 350px;
+    }
+    .messages-box{
+        width: 95%;
+        height: calc(100% - 370px);
+        padding: 10px 10px 10px 10px;
+    }
+    .student-profile-photo{
+        margin-top: 20px;
+        width: 180px;
+    }
+    .student-Message{
+        padding: 3vw;
+        margin: 3vw;
+        font-size: 0.9rem;
+    }
+    .Messages-heading{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 15px;
+    }
+}

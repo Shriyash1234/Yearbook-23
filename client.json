@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "yearbook23-8cc7c",
+    "private_key_id": "f415f87323c090f3b383569781cb68a7d8e2eb14",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrc2eJl4U11MXh\n0bwh8zHOnm0hKz7q5pxTFASqNpdhluiv1pY6RAoH/7BQ2TIUF1+zDpcW+gKuNu/D\nh0o0aFhvdS6wyMpN7uvG9u90TVvxpGb8uGUF2V3sVkuVLBFYezaCnYJ3kjS8FIRL\n1Z3ez/wMOxg+0CFZPbRI3YXSlXyKBR3G5Hzse3KBkrbeJYPdj0XnLNFpvZDOi44s\nhnACNF2eCj6XNNH5FnBcLtyaDqhTasv21f0+paMRzVtCXVisQpjmM7h26cG/y/Ui\npLXCjA0PZRAaVaEDqjsEMjOoQasrCBAYWX3PBQkvS///Oi+WLYuhuBJU0bHHh0lZ\nOYLj3Yx7AgMBAAECggEAJyavxoI0t6GyXEpOGTyVK5cO2YusDu0BVpFULWBQ+kaB\nNSId5QlDdycippuqbV8XCebzhpopwYmm/7Hltoj7ZNxQAKuhUuGTsrgR3y+JJumB\nYQVkgEzuPzlHgjVxcpCUVohMUiyvYSGYQk7yAX7iEhLuiu1xKBVIlXkMhZWAPm3j\nujC2rWsgfshfVB63YqHMhvD1RTIj9hu4YqvdcyWK7XQnI0BtYicm90TvqGcfdz7T\negTJrazKm7HvEs7GQyQMW6wPo0oRF4C9Htis1e/ymxpWpeicc/3jaOQrwNo9Cq8b\nN3Kzc01BbV9kMV/+Fgv1hN7Q6ZgR+xJs4L8DH+DJ/QKBgQDhZVcWEryhEiH+1AgO\nDq9ErUcCN+VZCQauuBcmIN5FgakEbRF+uHcnLjPN526BQelWmiG5m0vS6B6YAT8T\nKpp4ueolkrF10n5b9OAStDqMiVgOB8DSeI9qPm/R+Ip7agyVWp+9KCTwldgBznHb\n2IaR7Qg+atMTuGwLsgmftUEGnQKBgQDCuvU6nLbodigcTEfFlab6q6LEbICs10E+\njrseEk+Z5xw8sqsi1R5uzAzq1ndoiQvKe/pcfDZ5z9mIHWC6J1/cgaOj44ydONrO\nbads4RgCDKriO+wMwZTgjEpP4O4BKrzbJlAq3O92QK0Otd021uz0eWrVm+xN3RTc\ndCuWZSNn9wKBgFGiGoBsGNVdc+KPeLtepiwBdg5foDk3A6yUEA5HKTmTVFu+BPAY\nb09JdInGoEdAT/qFqGFI1ZV1bF8xVF7ktz2yWBNzpcI+knVLozwi+nGb7MBoHnYc\nJBUet/EcS0uXhScyw1gHChn4q1s8IhC1w0dmye2RUxF5Yeh6evHU+9AhAoGAZFQ7\nIRW5T5ABHoNWv0BZpfFkjVtx+Jt3LCoR0m6QwLTIYaWUcv/nDCLpzNzu7NcfUhYK\najg9QQmMBItOWNsMkungTAJjYmX2pkDs8DYRTo0ERkelWPUsJX1ilEFJnyRL5YWZ\n7FukrQKpp1igPy8BKvybxK7vUzbDFspr4rL9SQUCgYEAl9XnNqm4dr7frYn/a0e3\noy/R+0MVhacZKefgZr2+6Ad/Y8shAb6vkFJkgKcgfWT/fvHlaxnzuO41WpRMmcF4\nEK7SeSjTR67zcyEFALtCWV3BxGQPB1ubutVMAyHtLeyhti7tBKV/DIdZfm6ZVXGV\ndVluA3/p73xqzZQP2U3XwbQ=\n-----END PRIVATE KEY-----\n",
+    "client_email": "yearbook23@yearbook23-8cc7c.iam.gserviceaccount.com",
+    "client_id": "105208357173812842026",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/yearbook23%40yearbook23-8cc7c.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}

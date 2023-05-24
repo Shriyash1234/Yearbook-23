@@ -1,0 +1,284 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 1;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.Home{
+    height: 100vh;
+    background-image: url('../../Assests/pictures/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: none;
+    transition: all 0.3s ease;
+  }
+.Home-Heading{
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 10rem;
+    font-size: 3.5rem;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #fff;
+    font-weight: 500;
+} 
+.but{
+    position: absolute;
+    background-color: #25cd71;
+    width: 135px;
+    height: 44px;
+    border-radius: 10px;
+    top:80px;
+    right:100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    z-index: 10;
+}
+.but:hover{
+    background-color: #21b765;
+}
+.social-handles{
+    position: absolute;
+    width: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    right: 10px;
+    right: -42vh;
+    margin-top: 70px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: rotate(90deg);
+}
+.fa-brands{
+    color: #fff;
+    width: 22px;
+    height: 22px;
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+}
+.MAPRC-block,.Yearbooks{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.MAPRC-block{
+    justify-content: flex-end;
+}
+.Yearbooks{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Yearbooks p{
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Website-MAPRC p{
+    font-size: 1rem;
+    margin: 0px;
+    text-align: center;
+}
+.Website-MAPRC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.MAPRC{
+    font-weight: 600 !important;
+}
+.login-window{
+    background-color: #252525;
+    border-radius: 25px;
+    width: 480px;
+    height: 300px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.Yearbook23{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.login{
+    font-size: 1.2rem;
+    color: #9a9a9a;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.login-button{
+    margin-top: 20px;
+}
+@media all and (max-width:991px) {
+    .Home-Heading{
+        width: 100vw;
+        text-align: center;
+        margin-left: 0px;
+        padding: 50px;
+    }
+    .but{
+        align-self: center;
+        position: relative;
+        top: 300px;
+        right: 0px;
+    }
+    .but-block{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 50px;
+    }
+}
+@media all and (max-width:834px) {
+    .footer{
+        flex-direction: column;
+    }
+    .MAPRC-block,.Yearbooks{
+        width: 100%;
+        justify-content: center;
+    }
+    .but{
+        top: 400px;
+    }
+}
+@media all and (max-width:768px) {
+    .Home-Heading{
+        margin-top: 1rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .MAPRC-block{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .Yearbooks{
+        margin-bottom: 30px;
+    }
+    .but{
+        top: 450px;
+    }
+    .social-handles{
+        right: -46vh;
+    }
+    .login-window{
+        width: 430px;
+        height: 280px;
+        padding: 30px 40px;
+    }
+    .Yearbook23{
+        font-size: 1.7rem;
+    }
+    .login{
+        margin-top: 10px;
+    }
+    .login-button{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width:479px) {
+    .MAPRC-block{
+        margin-bottom: 15px;
+    }
+    .Yearbooks{
+        margin-bottom: 15px;
+    }
+    .login-window{
+        width: 350px;
+        height: 250px;
+        padding: 20px 30px;
+    }
+    .Yearbook23{
+        font-size: 1.5rem;
+    }
+    .login{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    .login-button{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width:390px) {
+    .Home-Heading{
+        font-size: 3rem;
+        padding: 40px;
+    }
+    .login-window{
+        width: 300px;
+        height: 200px;
+        padding: 15px 25px;
+    }
+    .Yearbook23{
+        font-size: 1.2rem;
+    }
+    .login{
+        margin-top: 2px;
+        font-size: 1rem;
+    }
+    .login-button{
+        margin-top: 5px;
+    }
+    .but{
+        top: 300px;
+    }
+}

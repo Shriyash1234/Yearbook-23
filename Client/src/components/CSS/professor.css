@@ -1,0 +1,71 @@
+.professors{
+    background-color: #1c1c1c;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+}
+.prof-block{
+    background-color: #423F3E;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+    margin: 5vw 5vw 2vw 5vw;
+    border-radius: 15px;
+}
+/* .img-block{
+    width:100%;
+} */
+.prof-img{
+    object-fit: cover;
+    width:20vw;
+    aspect-ratio: 1/1;
+    /* height: 40vh; */
+    margin: 1.5vw;
+    border-radius: 15px;
+}
+.prof-message{
+    padding: 3vw;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+p,i{
+    color: #fff;
+}
+@media all and (max-width:991px) {
+    .professors{
+        padding-top: 10vw;
+    }
+   .prof-img{
+    width: 30vw;
+   } 
+}
+@media all and (max-width:768px) {
+    .professors{
+        padding-top: 15vw;
+    }
+    .prof-block{
+        flex-direction: column;
+        /* background-color: #1c1c1c;
+        border: 0px; */
+    }
+    .prof-img{
+        width: 80vw;
+        height: 80vw;
+        border-radius: 15px 15px 15px 15px;
+        margin-top: 3vw;
+       }
+    .prof-message{
+        padding: 4vw;
+    }   
+    p{
+        font-size: 1.2rem;
+    }   
+}
+@media all and (max-width:479px){
+    .professors{
+        padding-top: 25vw;
+    }
+    .prof-block{
+        margin-bottom: 10vw;
+    }
+}
