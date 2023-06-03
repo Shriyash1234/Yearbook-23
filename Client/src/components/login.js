@@ -24,7 +24,7 @@ function Login(){
                     SetGname(data.family_name + data.given_name)
                     // Setting the value of variables in redux 
                     dispatch(setUserName(data.family_name +" "+ data.given_name,data.email))
-                    navigate('/Yearbook23',{state:{userMail: data.email,userName:data.family_name +" "+ data.given_name}})
+                    navigate('/AllStudents',{state:{userMail: data.email,userName:data.family_name +" "+ data.given_name}})
                 }}
                 onReject={(err) => {
                 console.log(err);

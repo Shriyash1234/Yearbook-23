@@ -29,36 +29,13 @@
     margin: auto;
 }
 
-.student-profile-photo{
-    width: 90%;
-    aspect-ratio: 1/1;
-    top: 0px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.student-profile-name{
-    margin-top: 30px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: 600 !important;
-}
-.student-profile-bio{
-    font-size: 1rem;
-    overflow-y: scroll;
-    height: 140px;
-    padding: 10px 15px;
-    color: #fff;
-}
-.student-profile-bio::-webkit-scrollbar {
-    display: none;
-}
-.Messages-heading{
+/* .Messages-heading{
     text-align: left;
     font-size: 1.5rem;
     color: #fff;
     padding: 20px 20px 10px 35px;
     margin-bottom: 0px;
-}
+} */
 .student-messages{
     overflow: scroll;
     height: 85%;
@@ -127,17 +104,9 @@
     .profile-box{
         height: 90%;
     }
-    .image-name-bio{
-        width: 100%;
-        height: 430px;
-    }
     .junior-messages-box{
         width: 95%;
         height: 95%;
-    }
-    .student-profile-photo{
-        margin-top: 20px;
-        width: 250px;
     }
     .junior-messages-box{
         padding: 10px 10px 30px 10px;
@@ -159,13 +128,7 @@
         margin-top: 60px;
         margin-left: 0px;
     }
-    .student-profile-name{
-        margin-bottom: 0rem;
-    }
-    .student-profile-photo{
-        margin-top: 20px;
-        width: 220px;
-    }
+   
     .message-photo{
         padding: 3vw;
     }
@@ -182,7 +145,7 @@
         height: 85%;
         margin-top: 75px;
     }
-    .student-profile-name{
+    /* .student-profile-name{
         margin-bottom: 0rem;
         font-size: 1rem;
     }
@@ -193,15 +156,15 @@
     .student-profile-photo{
         margin-top: 20px;
         width: 180px;
-    }
+    } */
     .message-photo{
         padding: 3vw;
         margin: 3vw;
         font-size: 0.9rem;
     }
-    .Messages-heading{
+    /* .Messages-heading{
         font-size: 1.2rem;
         text-align: center;
         padding: 15px;
-    }
+    } */
 }

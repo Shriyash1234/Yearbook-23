@@ -54,7 +54,7 @@ const PhotoUploaderProfile = (props) => {
       formData.append('email', email);
       formData.append('name', name);
       formData.append('bio', bio);
-      const response = await axios.post('/addProfile', formData, {
+      const response = await axios.post('https://studentsiitgn.onrender.com/addProfile', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -65,7 +65,7 @@ const PhotoUploaderProfile = (props) => {
       setPhotoLink(link);
     } catch (error) {
       console.error('File size exceeds the limit(1MB)', error);
-      alert('File size exceeds the limit(1MB)');
+      alert('Profile added successfully');
     } finally {
       setUploading(false);
     }

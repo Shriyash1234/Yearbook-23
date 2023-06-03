@@ -20,7 +20,11 @@ dotenv.config();
 const app = express();
 const dbName = "Yearbook2023"
 var Router   = require('router')
-app.use(cors());
+app.use(cors({
+  origin: 'https://students.iitgn.ac.in',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,'Client','build')))  //Joining build folder
 var router = Router()
@@ -35,7 +39,12 @@ mongoose.connect(                                              //Connecting Mong
 app.get("*",async(req,res)=>{
     res.sendFile(path.join(__dirname,"Client","build","index.html"))
   });
-
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://students.iitgn.ac.in');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 
 //Declaring Schemas
   const responseSchema = {
@@ -147,8 +156,9 @@ const emailSchema = {
         console.log("User response saved successfully");
       }
     }); 
-    res.redirect("/Yearbook23/students/"+FEmail+"/"+mail+"/"+name)  //Adding FEmail+ EMail+ name field so that after refreshing react can extract them from url
+       res.redirect("https://students.iitgn.ac.in/yearbook/2023/#/students/"+FEmail+"/"+mail+"/"+name)  //Adding FEmail+ EMail+ name field so that after refreshing react can extract them from url
   })
+
   
   app.post("/Yearbook23/addConfession",function(req,res){  //for viewing customers
     const message = req.body.message;
@@ -162,7 +172,7 @@ const emailSchema = {
         console.log("User response saved successfully");
       }
     }); 
-    res.redirect("/Yearbook23/Confessions")
+    res.redirect("https://students.iitgn.ac.in/yearbook/2023/#/Confessions")
   })
   app.post("/Yearbook23/addjuniorresponse",function(req,res){  //for viewing customers
     const message = req.body.message;
@@ -182,13 +192,15 @@ const emailSchema = {
         console.log("User response saved successfully");
       }
     }); 
-    res.redirect("/Yearbook23/students/"+FEmail+"/"+mail+"/"+name)
+    res.redirect("https://students.iitgn.ac.in/yearbook/2023/#/students/"+FEmail+"/"+mail+"/"+name)
+    // res.redirect("https://students.iitgn.ac.in/yearbook/2023/AllStudents")
   })
 
   //Function to check the size limit of file
   const MAX_FILE_SIZE = 1 * 1024 * 1024; // 1 MB in bytes
   const checkFileSizeLimit = (req, res, next) => {
     if (req.headers['content-length'] > MAX_FILE_SIZE) {
+      alert('File exceeded the size limit')
       return res.status(400).json({ error: 'File size exceeds the limit' });
     }
     next();
@@ -208,7 +220,7 @@ const auth = new google.auth.GoogleAuth({
       // Create file metadata
       const fileMetadata = {
         name: file.originalname,
-        parents: [folderId],
+        parents: ['183S7-HWbc2huCyoC50A4_MLEqmIkpouP'],
       };
   
       // Convert file buffer to readable stream
@@ -273,7 +285,8 @@ const auth = new google.auth.GoogleAuth({
         console.error(err);
       } else {
         console.log("User response saved successfully");
-        res.redirect("/Yearbook23/students"+email)
+       res.redirect("https://students.iitgn.ac.in/yearbook/2023/#/students"+email)
+        
       }
     }); 
     } catch (error) {
@@ -337,7 +350,7 @@ const auth = new google.auth.GoogleAuth({
         console.log("User response saved successfully");
       }
     }); 
-    res.redirect("/Yearbook23")
+    res.redirect("https://students.iitgn.ac.in/yearbook/2023/#/AllStudents")
     
     } catch (error) {
       console.error('Error uploading photo to Google Drive:', error);

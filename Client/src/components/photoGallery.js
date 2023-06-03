@@ -24,7 +24,7 @@ const PhotoGallery = () => {
   
   const fetchPhotos = async () => {
     try {
-      const response = await fetch('/Yearbook23/photos');
+      const response = await fetch('https://studentsiitgn.onrender.com/Yearbook23/photos');
       const fetchedPhotos = await response.json();
   
       // Add isLoaded property to each photo
@@ -67,9 +67,11 @@ const PhotoGallery = () => {
           <div className='Memorylane'>
             <div id="gallery">
               {photos.map(photo => (
+                <a target="_blank" href={photo.webViewLink}>
                 <div key={photo.id}>
                   <img src={photo.thumbnailLink} />
                 </div>
+                </a>
               ))}
             </div>
             <PhotoUploader/>

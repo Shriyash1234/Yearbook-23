@@ -6,7 +6,7 @@ import * as HiIcons from 'react-icons/hi';
 export const SidebarData = [
   {
     title: 'Yearbook| Class of 2023',
-    path: '/Yearbook23',
+    path: '/AllStudents',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
@@ -18,19 +18,19 @@ export const SidebarData = [
   // },
   {
     title: 'Messages from Juniors',
-    path: '/Yearbook23/juniorMessages',
+    path: '/juniorMessages',
     icon: <FiIcons.FiMessageSquare />,
     cName: 'nav-text'
   },
   {
     title: 'Memorylane',
-    path: '/Yearbook23/Memorylane',
+    path: '/Memorylane',
     icon: <HiIcons.HiPhotograph />,
     cName: 'nav-text'
   },
   {
     title: 'Confessions',
-    path: '/Yearbook23/Confessions',
+    path: '/Confessions',
     icon: <FiIcons.FiFileText />,
     cName: 'nav-text'
   },

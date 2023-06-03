@@ -22,7 +22,7 @@ const PhotoUploader = () => {
       // Upload the file
       const formData = new FormData();
       formData.append('file', selectedFile);
-      const response = await axios.post('/upload', formData, {
+      const response = await axios.post('https://studentsiitgn.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

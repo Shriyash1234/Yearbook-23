@@ -9,6 +9,19 @@
     flex-direction: column;
     align-items: center;
 }
+.profile-color-1{
+    background-color: #013220;
+}
+.leaf{
+    width: 25px;
+    position: relative;
+    left: 150px;
+    transform: rotate(-45deg);
+    display: none;
+}
+.isVisible{
+    display: block;
+}
 .student-bio{
     font-size: 1rem;
     overflow-y: scroll;

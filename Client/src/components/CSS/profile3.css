@@ -284,6 +284,9 @@
     .photogallery{
         flex-direction: column;
         margin-left: 0px;
+        max-width: 370px;
+        margin: auto;
+        overflow: hidden;
     }
     .side-photos{
         width: 250px;
@@ -303,23 +306,25 @@
     .student-profile-name{
         margin-bottom: 0rem;
         font-size: 1rem;
+        margin-top: 10px;
     }
     .student-profile-bio{
         font-size: 0.9rem;
-        height: 90px;
+        height: 73px;
+        margin-bottom: 0px;
     }
     .image-name-bio{
         width: 100%;
-        height: 350px;
+        height: 300px;
     }
     .messages-box{
         width: 95%;
-        height: calc(100% - 370px);
+        height: calc(100% - 310px);
         padding: 10px 10px 10px 10px;
     }
     .student-profile-photo{
         margin-top: 20px;
-        width: 180px;
+        width: 150px;
     }
     .student-Message{
         padding: 3vw;
@@ -329,6 +334,9 @@
     .Messages-heading{
         font-size: 1.2rem;
         text-align: center;
-        padding: 15px;
+        padding: 5px 15px 5px 15px;
+    }
+    .upload-photo-message{
+        width: 70vw;
     }
 }

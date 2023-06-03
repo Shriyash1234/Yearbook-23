@@ -17,7 +17,7 @@ function Profile(props){
     const [juniorresponses, setjuniorResponses] = useState([]);
     const myState = useSelector((state)=>state.setUserNameMail)
 
-
+   // For showing what is active page
     var navTextElements = document.getElementsByClassName('nav-text');
     if (navTextElements.length > 1) {
     var secondNavTextElement = navTextElements[0];
@@ -41,15 +41,15 @@ function Profile(props){
         dispatch(setUserName(name,uemail))
     };
 
-    console.log(myState.name)
-    console.log(myState.mail)
+    // console.log(myState.name)
+    // console.log(myState.mail)
     
     useEffect(() => {
-        fetch("/Yearbook23/responses")
+        fetch("https://studentsiitgn.onrender.com/Yearbook23/responses")
         .then(response => response.json())
         .then(data => setResponses(data));
 
-        fetch("/Yearbook23/junior-responses")
+        fetch("https://studentsiitgn.onrender.com/Yearbook23/junior-responses")
         .then(response => response.json())
         .then(data =>setjuniorResponses(data));
     }, []);
@@ -73,7 +73,23 @@ function Profile(props){
         }
         props.func(email)  
       }, [email,mail,responses])
-
+    //TO ensure all the details are filled in the form
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Prevent form submission
+        const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value;
+        const mailAddress = document.getElementById('mailAddress').value;
+        console.log('valid')
+        // Validate form fields
+        if (!name|| !mailAddress|| !message) {
+          alert('Please fill in all fields.');
+          return; // Stop form submission
+        }
+        const formData = new FormData();
+        formData.append('email', mailAddress);
+        formData.append('name', name);
+        formData.append('message', message);
+       };
     //extracting name from email  
     function findName(email){
 		let ind = mails.indexOf(email)
@@ -86,6 +102,7 @@ function Profile(props){
         return dict[link]
 
         }
+            
     return(
         <div>
             <div className='student-profile'>
@@ -132,13 +149,13 @@ function Profile(props){
                             responses.map(response =>{
                                 return(
                                     <div>
-                                    {response.FEmail===(props.name||mail||email) && response.Message ?<p className='student-Message'>{response.Message}<Link to='/Yearbook23/students' state={{mail:response.Email||mail,source:'profilePics'}}><em>-{findName(response.Email)||(response.Name)}</em></Link></p>:''}
+                                    {response.FEmail===(props.name||mail||email) && response.Message ?<p className='student-Message'>{response.Message}<Link to='/students' state={{mail:response.Email||mail,source:'profilePics'}}><em>-{findName(response.Email)||(response.Name)}</em></Link></p>:''}
                                     </div>
                             )})
                         }
                         {/* The value of friend's mai address, user email address and user name are already filled */}
                         {/* myState.name||userName||name using all of them so that there can one of them which is not empty  */}
-                        <form action='/Yearbook23/addresponse' method='post' id='message-form'>
+                        <form action='https://studentsiitgn.onrender.com/Yearbook23/addresponse' method='post' id='message-form' >
                             <input type='text' name='message' id='message' placeholder="Add A Message"></input>
                             <div className={userName || name ? 'input-fields hidden' : 'input-fields'}>
                                     <input type='text' name='name' id='name' placeholder="Your Name" value={myState.name || userName || name} />
@@ -154,12 +171,12 @@ function Profile(props){
                             juniorresponses.map(response =>{
                                 return(
                                     <div>
-                                    {response.FEmail===(props.name||mail||email) ?<p className='student-Message'>{response.Message}<Link to='/Yearbook23/students' state={{mail:response.Email||mail}}><em>-{findName(response.Email)||(response.Name)}</em></Link></p>:''}
+                                    {response.FEmail===(props.name||mail||email) ?<p className='student-Message'>{response.Message}<Link to='/students' state={{mail:response.Email||mail}}><em>-{findName(response.Email)||(response.Name)}</em></Link></p>:''}
                                     </div>
                             )})
                         }
-                        <form action='/Yearbook23/addjuniorresponse' method='post' id='message-form'>
-                            <input type='text' name='message' id='message' placeholder="Add A Message"></input>
+                        <form action='https://studentsiitgn.onrender.com/Yearbook23/addjuniorresponse' method='post' id='message-form'>
+                            <input type='text' name='message' id='message' placeholder="Add A Message" ></input>
                             <div className={userName || name ? 'input-fields hidden' : 'input-fields'}>
                                     <input type='text' name='name' id='name' placeholder="Your Name" value={myState.name || userName || name} />
                                     <input type='text' name='mailAddress' id='mailAddress' placeholder="Your Email" value={myState.mail || userMail || uemail} />

@@ -47,7 +47,7 @@ function Header(props) {
 				    // props.pushState({mail:findMail(option)}, '', '/Yearbook23/students/')
 					props.func(findMail(option));
 					// window.location.href = '/Yearbook23/students/'+findMail(option);
-					navigate('/Yearbook23/students',{state:{mail: findMail(option),source:'profilePics'}})
+					navigate('/students',{state:{mail: findMail(option),source:'profilePics'}})
 				}}
 	
 				/>

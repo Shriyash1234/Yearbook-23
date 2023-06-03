@@ -19,7 +19,7 @@ function Confessions(props){
             aTag.style.backgroundColor = '#0b1d26';
         }
     }
-        fetch("/Yearbook23/confession-responses")
+        fetch("https://studentsiitgn.onrender.com/Yearbook23/confession-responses")
         .then(response => response.json())
         .then(data =>setConfessions(data));
         
@@ -39,7 +39,7 @@ function Confessions(props){
                                         <p className='student-Message'>{confession.Message}</p>
                                 )})
                         }
-                        <form action='/Yearbook23/addConfession' method='post' id='message-form'>
+                        <form action='https://studentsiitgn.onrender.com/Yearbook23/addConfession' method='post' id='message-form'>
                             <input type='text' name='message' id='message' placeholder="Add A Message"></input>
                             <div className='submit-btn'>
                                 <button className="buttonn" type="submit">Submit</button>

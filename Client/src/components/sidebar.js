@@ -42,11 +42,12 @@ function Navbar(props) {
     // Each time on resizing
     useEffect(() => {
         window.addEventListener("resize", windowwidth);
-        window.addEventListener("load", windowwidth);
             return () => {
                 window.removeEventListener("resize", windowwidth);
-                window.removeEventListener("load", windowwidth);
             };
+    }, []);
+    useEffect(() => {
+      windowwidth();
     }, []);
 
   const showSidebar = () => {
@@ -86,7 +87,7 @@ function Navbar(props) {
             <li className='navbar-toggle menu-bars2'>
             <AiIcons.AiOutlineClose />
             </li>
-            <Link to='/Yearbook23'><p className='Yearbook-23'>Yearbook'23</p></Link>
+            <Link to='/AllStudents'><p className='Yearbook-23'>Yearbook'23</p></Link>
             <hr className='hr'/>
             {SidebarData.map((item, index) => {
               return (

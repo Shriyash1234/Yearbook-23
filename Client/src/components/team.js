@@ -32,13 +32,13 @@ function Team(){
             <Sidebar/>
             <div className='team'>
                 <h1 className='Heading'>Our Team</h1>
-                <div className='team-message'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                <div className='team-message'><p>Congratulations, Class of 2024!<br/> As you embark on an exciting journey, remember the friendships and lessons from your time here. Your future is in your hands, so stay focused, believe in yourself, and embrace new opportunities. This Yearbook is our gift to you. We admire you and can't wait to see your accomplishments. Best wishes for a bright future!<br/>Team MAPRC</p></div>
                 <div className='team-cards'>
                     <div className='card'>
                         <img class='team-photo' src={require('../Assests/pictures/team_images/Ayush.jpg')}></img>
                         <div className='content'>
                             <p className='name'>Ayush Kushwah</p>
-                            <p className='position'>MAPRC Secreatary</p>
+                            <p className='position'>MAPRC Secretary</p>
                             <div className="social-icons">
                                 <span>
                                     <a target='blank' href='https://www.facebook.com/profile.php?id=100007227152962'><FontAwesomeIcon className="fa-brands fb1" icon={faFacebookF} /></a>
@@ -53,7 +53,7 @@ function Team(){
                         <img class='team-photo' src={require('../Assests/pictures/team_images/Manish.jpg')}></img>
                         <div className='content'>
                             <p className='name'>Manish jangir</p>
-                            <p className='position'>Technical Cordinator</p>
+                            <p className='position'>Technical Coordinator</p>
                             <div className="social-icons">
                                 <span>
                                     <a target='blank' href='https://www.facebook.com/manish.jangir.16940599?mibextid=ZbWKwL'><FontAwesomeIcon className="fa-brands fb1" icon={faFacebookF} /></a>

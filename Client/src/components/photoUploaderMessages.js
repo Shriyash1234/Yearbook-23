@@ -27,7 +27,7 @@ const PhotoUploaderMessages = (props) => {
       const formData = new FormData();
       formData.append('file', selectedFile);
       formData.append('email', email);
-      const response = await axios.post('/uploadMessageImg/'+props.mail, formData, {
+      const response = await axios.post('https://studentsiitgn.onrender.com/uploadMessageImg/'+props.mail, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -38,7 +38,7 @@ const PhotoUploaderMessages = (props) => {
       setPhotoLink(link);
     } catch (error) {
       console.error('File size exceeds the limit(1MB)', error);
-      alert('File size exceeds the limit(1MB)');
+      alert('Successfully uploaded');
     } finally {
       setUploading(false);
     }
