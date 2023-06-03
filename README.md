@@ -10,4 +10,33 @@ Technologies used:
 
 4.Datbase:MongoDB,Json data
 
-Hosted using cpanel at: https://students.iitgn.ac.in/yearbook/2022
+Hosted using cpanel at: https://students.iitgn.ac.in/yearbook/2023
+
+Front page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/ad3c1e57-38cf-49bd-af3b-92c863e193ab)
+
+Login page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/05ae7404-a2fe-4f03-b45f-953e92f0a4c8)
+
+All students page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/308688e2-3818-4efe-bc60-b4fc93a41c5f)
+
+Student profile page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/0798b8de-8f8a-4fd3-936f-a6dc1d3f4e79)
+
+Memorylane page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/279e3746-47d2-46c4-99f1-b2addd905ac6)
+
+Junior's Messages page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/679bc82a-a513-4316-861d-c416ffbc037b)
+
+Our Team Page
+
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/f4a63ef0-dff9-48b8-a047-ca4631a70491)
+
