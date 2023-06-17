@@ -163,7 +163,8 @@ export const dict =
 "https://drive.google.com/open?id=1mnY2hVZMCi0qBaeKKwj17eRZMBntr0Qn"	:	"IMG_20230207_125744 - Mekala Rishitha Ravi 19110094.jpg"	,
 "https://drive.google.com/open?id=1QIJc8qdDQvs9VfZi8gPSCXFy6r3Om4k2"	:	"IMG_20230328_011408 - Dhanashree Sanjay Ingale 19110011.jpg"	,
 "https://drive.google.com/open?id=17GAyQYhQd3lPLyobR5nPVvu4CpcPwgw9"	:	"DSC_3515 - Sakshi Jagtap.JPG"	,
-"https://drive.google.com/open?id=14h5feU2KtD8-xoiv98IXKw97DYkeXe39"	:	"Screenshot_20230419_235813 - Sayan Biswas 19110165.jpg"	
+"https://drive.google.com/open?id=14h5feU2KtD8-xoiv98IXKw97DYkeXe39"	:	"Screenshot_20230419_235813 - Sayan Biswas 19110165.jpg",
+"user":"user.png"	
 }
 			
 			

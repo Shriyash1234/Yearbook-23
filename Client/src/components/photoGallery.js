@@ -65,6 +65,7 @@ const PhotoGallery = () => {
           <p>Loading...</p>
         ) : (
           <div className='Memorylane'>
+            <img className='MAPRC-Memorylane' src={require('../Assests/pictures/MAPRC-Memorylane2.jpg')}></img>
             <div id="gallery">
               {photos.map(photo => (
                 <a target="_blank" href={photo.webViewLink}>

@@ -5,17 +5,30 @@ import './CSS/profile.css'
 import mails from '../data/emails.json'
 import names from '../data/name.json'
 import responsesData from '../data/responses.json'
+import ProfilePics from '../data/profilePics.json'
 import { useLocation,Link ,useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import {dict} from './imgLinkData'
 import { setUserName} from '../actions/index'
 import PhotoUploaderMessages from './photoUploaderMessages';
+import PhotoPopup from './PhotoPopup';
 
 function Profile(props){
     const dispatch = useDispatch();
     const [responses, setResponses] = useState(responsesData);
     const [juniorresponses, setjuniorResponses] = useState([]);
     const myState = useSelector((state)=>state.setUserNameMail)
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [selectedPhotoId, setSelectedPhotoId] = useState(null);
+
+    const openPopup = (photoId) => {
+        setSelectedPhotoId(photoId);
+        setIsPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    };
 
    // For showing what is active page
     var navTextElements = document.getElementsByClassName('nav-text');
@@ -97,6 +110,18 @@ function Profile(props){
 		return name
 	}
 
+    function findPic(email)
+    {
+        let user = 'user'
+        for(let i =0;i<ProfilePics.length;i++)
+        {
+            if(ProfilePics[i].Your_Email_ID === email)
+            {
+                return ProfilePics[i].Profile_Pic;
+            }
+        }
+        return user
+    }
     //Dicitonary to store links and corresponding image name
         function funct(link){
         return dict[link]
@@ -148,8 +173,10 @@ function Profile(props){
                         {
                             responses.map(response =>{
                                 return(
-                                    <div>
-                                    {response.FEmail===(props.name||mail||email) && response.Message ?<p className='student-Message'>{response.Message}<Link to='/students' state={{mail:response.Email||mail,source:'profilePics'}}><em>-{findName(response.Email)||(response.Name)}</em></Link></p>:''}
+                                    <div className='profile-photo-message'>
+                                    {response.FEmail===(props.name||mail||email) && response.Message ?<img className='student-profile-photo-circle' onClick={() => openPopup(response.Email)} src={require('../Assests/pictures/Profile_images/'+funct(response.Email?findPic(response.Email):findPic('user')))}/>:''}
+                                    {response.FEmail===(props.name||mail||email) && response.Message && isPopupOpen && selectedPhotoId === response.Email?<PhotoPopup id={response.Email} photoUrl={require('../Assests/pictures/Profile_images/' + funct(findPic(response.Email)))} onClose={closePopup}/>:''}
+                                    {response.FEmail===(props.name||mail||email) && response.Message ?<p className='student-friend-Message'><Link to='/students' state={{mail:response.Email||mail,source:'profilePics'}}><em className='friend-profile-name'>{findName(response.Email)||(response.Name||response.Email)}</em></Link><br className='space'/>{response.Message}</p>:''}
                                     </div>
                             )})
                         }

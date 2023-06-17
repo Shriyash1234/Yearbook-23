@@ -32,7 +32,7 @@ function Team(){
             <Sidebar/>
             <div className='team'>
                 <h1 className='Heading'>Our Team</h1>
-                <div className='team-message'><p>Congratulations, Class of 2024!<br/> As you embark on an exciting journey, remember the friendships and lessons from your time here. Your future is in your hands, so stay focused, believe in yourself, and embrace new opportunities. This Yearbook is our gift to you. We admire you and can't wait to see your accomplishments. Best wishes for a bright future!<br/>Team MAPRC</p></div>
+                <div className='team-message'><p>Congratulations, Class of 2023!<br/> As you embark on an exciting journey, remember the friendships and lessons from your time here. Your future is in your hands, so stay focused, believe in yourself, and embrace new opportunities. This Yearbook is our gift to you. We admire you and can't wait to see your accomplishments. Best wishes for a bright future!<br/>Team MAPRC</p></div>
                 <div className='team-cards'>
                     <div className='card'>
                         <img class='team-photo' src={require('../Assests/pictures/team_images/Ayush.jpg')}></img>
