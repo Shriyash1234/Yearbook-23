@@ -122,10 +122,29 @@ function Profile(props){
         }
         return user
     }
+    function findImg(email)
+    {
+        for(let i =0;i<ProfilePics.length;i++)
+        {
+            if(ProfilePics[i].Your_Email_ID === email)
+            {
+                return ProfilePics[i].Profile_Pic;
+            }
+        }
+    }
+    function findUrlImg(email)
+    {
+        for(let i =0;i<responses.length;i++)
+        {
+            if(responses[i].Your_Email_ID === email)
+            {
+                return responses[i].Profile_Pic;
+            }
+        }
+    }
     //Dicitonary to store links and corresponding image name
         function funct(link){
-        return dict[link]
-
+            return dict[link]
         }
             
     return(
@@ -174,9 +193,50 @@ function Profile(props){
                             responses.map(response =>{
                                 return(
                                     <div className='profile-photo-message'>
-                                    {response.FEmail===(props.name||mail||email) && response.Message ?<img className='student-profile-photo-circle' onClick={() => openPopup(response.Email)} src={require('../Assests/pictures/Profile_images/'+funct(response.Email?findPic(response.Email):findPic('user')))}/>:''}
-                                    {response.FEmail===(props.name||mail||email) && response.Message && isPopupOpen && selectedPhotoId === response.Email?<PhotoPopup id={response.Email} photoUrl={require('../Assests/pictures/Profile_images/' + funct(findPic(response.Email)))} onClose={closePopup}/>:''}
-                                    {response.FEmail===(props.name||mail||email) && response.Message ?<p className='student-friend-Message'><Link to='/students' state={{mail:response.Email||mail,source:'profilePics'}}><em className='friend-profile-name'>{findName(response.Email)||(response.Name||response.Email)}</em></Link><br className='space'/>{response.Message}</p>:''}
+                                    {   response.FEmail === (props.name || mail || email) && response.Message ? < img className = 'student-profile-photo-circle'
+                                        onClick = {
+                                            () => openPopup(response.Email)
+                                        }
+                                        // First check if email is present.If yes then check its image is present in dictionary if yes then give 
+                                        // the image present in folder. if it not in dictionary give image by its url and if he/she has not filled the form then give default user image
+                                        // and if the email is not present then give the default image prsent in the folder
+                                        src = {
+                                            response.Email?  
+                                                dict.hasOwnProperty(findImg(response.Email))?
+                                                    require('../Assests/pictures/Profile_images/'+funct(findPic(response.Email))):
+                                                        findUrlImg(response.Email)||require('../Assests/pictures/Profile_images/'+funct(findPic('user'))):
+                                                require('../Assests/pictures/Profile_images/'+funct(findPic('user')))
+                                        }
+                                        />
+                                    :''}
+                                    {response.FEmail === (props.name || mail || email) && response.Message && isPopupOpen && selectedPhotoId === response.Email ? < PhotoPopup id = {
+                                            response.Email
+                                        }
+                                        photoUrl = {
+                                            dict.hasOwnProperty(findImg(response.Email))?
+                                                require('../Assests/pictures/Profile_images/' + funct(findPic(response.Email))):
+                                                    findUrlImg(response.Email)
+                                        }
+                                        onClose = {
+                                            closePopup
+                                        }
+                                        />:''}
+                                    {response.FEmail === (props.name || mail || email) && response.Message ? (
+                                            <p className="student-friend-Message">
+                                            <Link
+                                                to="/students"
+                                                state={{ mail: response.Email || mail, source: "profilePics" }}
+                                            >
+                                                <em className="friend-profile-name">
+                                                {findName(response.Email) || response.Name || response.Email}
+                                                </em>
+                                            </Link>
+                                            <br className="space" />
+                                            {response.Message}
+                                            </p>
+                                        ) : (
+                                            ""
+                                        )}
                                     </div>
                             )})
                         }
