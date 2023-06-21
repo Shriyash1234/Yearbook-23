@@ -72,7 +72,7 @@ function Team(){
                                 <span>
                                     <a target='blank' href='https://www.facebook.com/shriyash.mandavekar/'><FontAwesomeIcon className="fa-brands fb1" icon={faFacebookF} /></a>
                                     <a target='blank' href='https://www.instagram.com/shriyashmandavekar/'><FontAwesomeIcon className="fa-brands insta1" icon={faInstagram} /></a> 
-                                    <a target='blank' href='https://www.linkedin.com/in/mandavekar-shriyash-838398227/'><FontAwesomeIcon className="fa-brands linkedin1" icon={faLinkedin} /></a>
+                                    <a target='blank' href='https://www.linkedin.com/in/shriyash-mandavekar-838398227/'><FontAwesomeIcon className="fa-brands linkedin1" icon={faLinkedin} /></a>
                                     <a target='blank' href='https://github.com/Shriyash1234'><FontAwesomeIcon className="fa-brands youtube1" icon={faGithub} /></a>
                                 </span>
                             </div>

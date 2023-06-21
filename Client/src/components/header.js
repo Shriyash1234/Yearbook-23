@@ -5,21 +5,33 @@ import InputAdornment from '@mui/material/InputAdornment';
 import "./CSS/header.css"
 import mails from '../data/emails.json'
 import names from '../data/name.json'
+import IntialNames from '../data/names.json'
 import{ useNavigate} from 'react-router-dom';
-import SearchIcon from '@mui/icons-material/Search';
+import { EmailNamesData } from "./EmailNamesdata";
 
 function Header(props) {
     const [ name, setName ] = useState("")
 	let navigate = useNavigate();
 	function findMail(name){
-		let ind = names.indexOf(name)
-		let mail = mails[ind]
-		return mail
+		// let ind = names.indexOf(name)
+		// let mail = mails[ind]
+		// return mail
+		for (let key in EmailNamesData) {
+			if (EmailNamesData.hasOwnProperty(key) && EmailNamesData[key] === name) {
+			  return key;
+			}
+		  }
+		  return null;
+	}
+	function findSource(name){
+		if(IntialNames.includes(name)) return 'profilePics'
+		else return 'profiles'
 	}
 	function findName(mail){
-		let ind = names.indexOf(mail)
-		let name = mails[ind]
-		return name
+		// let ind = names.indexOf(mail)
+		// let name = mails[ind]
+		// return name
+		return EmailNamesData[mail]
 	}
 	const style = {
 		"& label.Mui-focused": {
@@ -47,7 +59,7 @@ function Header(props) {
 				    // props.pushState({mail:findMail(option)}, '', '/Yearbook23/students/')
 					props.func(findMail(option));
 					// window.location.href = '/Yearbook23/students/'+findMail(option);
-					navigate('/students',{state:{mail: findMail(option),source:'profilePics'}})
+					navigate('/students',{state:{mail: findMail(option),source:findSource(option)}})
 				}}
 	
 				/>

@@ -4,8 +4,10 @@ import './CSS/profile3.css'
 import './CSS/profile.css'
 import mails from '../data/emails.json'
 import names from '../data/name.json'
+import IntialNames from '../data/names.json'
 import responsesData from '../data/responses.json'
 import ProfilePics from '../data/profilePics.json'
+import { EmailNamesData } from './EmailNamesdata';
 import { useLocation,Link ,useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import {dict} from './imgLinkData'
@@ -105,11 +107,12 @@ function Profile(props){
        };
     //extracting name from email  
     function findName(email){
-		let ind = mails.indexOf(email)
-		let name = names[ind]
-		return name
+		return EmailNamesData[email]
 	}
-
+    function findSource(name){
+		if(IntialNames.includes(name)) return 'profilePics'
+		else return 'profiles'
+	}
     function findPic(email)
     {
         let user = 'user'
@@ -225,10 +228,10 @@ function Profile(props){
                                             <p className="student-friend-Message">
                                             <Link
                                                 to="/students"
-                                                state={{ mail: response.Email || mail, source: "profilePics" }}
+                                                state={{ mail: response.Email || mail, source: findSource(findName(response.Email)) }}
                                             >
                                                 <em className="friend-profile-name">
-                                                {findName(response.Email) || response.Name || response.Email}
+                                                    {response.Profile_Pic?findName(response.Email) || response.Email:findName(response.Email)||response.Name||response.Email }
                                                 </em>
                                             </Link>
                                             <br className="space" />

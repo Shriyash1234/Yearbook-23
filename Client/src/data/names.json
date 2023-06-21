@@ -1,479 +1,165 @@
 [
- {
-  "Name": "Aakshi gautam"
- },
- {
-  "Name": "Abhilasha Hazarika"
- },
- {
-  "Name": "Abhishek Yawalkar"
- },
- {
-  "Name": "Achal Kanojia"
- },
- {
-  "Name": "Aditi bhargava"
- },
- {
-  "Name": "Aditya Shakya"
- },
- {
-  "Name": "Ahhie Megha"
- },
- {
-  "Name": "Akshay Chourasiya"
- },
- {
-  "Name": "Alok Pradhan "
- },
- {
-  "Name": "Amey Bait"
- },
- {
-  "Name": "Amisha Rastogi"
- },
- {
-  "Name": "Amitesh "
- },
- {
-  "Name": "Aniket G Lakhpati"
- },
- {
-  "Name": "Aniket Rajnish"
- },
- {
-  "Name": "Aniket Walekar"
- },
- {
-  "Name": "Anjali Milind Gawai"
- },
- {
-  "Name": "Ankit Dhiman "
- },
- {
-  "Name": "Ankita Jamane "
- },
- {
-  "Name": "Ankita Kumari Jain"
- },
- {
-  "Name": "Ankita Yadav"
- },
- {
-  "Name": "Arjun Yadav"
- },
- {
-  "Name": "Arushi Arnav"
- },
- {
-  "Name": "Aryamann Tomar"
- },
- {
-  "Name": "Aryan Shah"
- },
- {
-  "Name": "Ashu"
- },
- {
-  "Name": "Avinash Kumar"
- },
- {
-  "Name": "Ayush Anand"
- },
- {
-  "Name": "Ayush Srivastava"
- },
- {
-  "Name": "Ayushi Bhatt"
- },
- {
-  "Name": "Bhanu Prasad "
- },
- {
-  "Name": "Chaitanya Guntoorkar"
- },
- {
-  "Name": "Chanchal Sharma"
- },
- {
-  "Name": "Chetansinh Chauhan"
- },
- {
-  "Name": "Chitranjan Kumar Jha"
- },
- {
-  "Name": "Darsana J Varier"
- },
- {
-  "Name": "Deeksha Gautam"
- },
- {
-  "Name": "Deepak Singh"
- },
- {
-  "Name": "Dhanashree Ingale"
- },
- {
-  "Name": "Dheeraj Kumar"
- },
- {
-  "Name": "Dhruv Darda"
- },
- {
-  "Name": "Divyanshu Meena"
- },
- {
-  "Name": "Fulmoni Munda "
- },
- {
-  "Name": "G B Harsha Vardhan"
- },
- {
-  "Name": "Gayatri Nerpagar "
- },
- {
-  "Name": "Girivendra Pratap Yadav"
- },
- {
-  "Name": "Gopika"
- },
- {
-  "Name": "Harsh Dudhatra"
- },
- {
-  "Name": "Harsh Mandalia"
- },
- {
-  "Name": "Harshavardhan Naik"
- },
- {
-  "Name": "Harshil Purohit"
- },
- {
-  "Name": "Himanshu Singhal "
- },
- {
-  "Name": "Hiten Ferwani "
- },
- {
-  "Name": "Hitesh Kumar "
- },
- {
-  "Name": "Hitesh Pradhan"
- },
- {
-  "Name": "Ishan Prayagi"
- },
- {
-  "Name": "Jayasurya Nalamolu"
- },
- {
-  "Name": "Jitender ( Jiten Singh )"
- },
- {
-  "Name": "K Nandana Dilip"
- },
- {
-  "Name": "Kaushik Kangsabanik"
- },
- {
-  "Name": "Keshav Kumar Verma"
- },
- {
-  "Name": "Khantil Patel"
- },
- {
-  "Name": "Koushik Chandra Chenna "
- },
- {
-  "Name": "Likhita Baswani"
- },
- {
-  "Name": "Madhusmita Ray"
- },
- {
-  "Name": "Malavika"
- },
- {
-  "Name": "Manas Mulpuri"
- },
- {
-  "Name": "Md Amir Shohail"
- },
- {
-  "Name": "Meet Bavaria"
- },
- {
-  "Name": "Meet Thumar"
- },
- {
-  "Name": "Mekala Rishitha Ravi "
- },
- {
-  "Name": "Mihir Chauhan "
- },
- {
-  "Name": "Mohammad Asim"
- },
- {
-  "Name": "Mohd Umair Iqbal"
- },
- {
-  "Name": "Mrunal"
- },
- {
-  "Name": "Murshid Husain"
- },
- {
-  "Name": "Nachiket Pradhan"
- },
- {
-  "Name": "Namrata Goyal "
- },
- {
-  "Name": "Naveen Kumar"
- },
- {
-  "Name": "Nikhil"
- },
- {
-  "Name": "Nikita"
- },
- {
-  "Name": "NILABHRA ADHIKARY"
- },
- {
-  "Name": "Nilachal Chakrabarti"
- },
- {
-  "Name": "Nisha Singla"
- },
- {
-  "Name": "Nishank Chauhan"
- },
- {
-  "Name": "Paarth Sachan"
- },
- {
-  "Name": "Palak Wadhwa"
- },
- {
-  "Name": "Paras Jain"
- },
- {
-  "Name": "Patel Agam"
- },
- {
-  "Name": "Patel Rajan Girishbhai "
- },
- {
-  "Name": "Patel Vashisth "
- },
- {
-  "Name": "Pradnya Pise"
- },
- {
-  "Name": "Praisy David"
- },
- {
-  "Name": "Pranav Kanwat"
- },
- {
-  "Name": "Prateek Kumar Jha"
- },
- {
-  "Name": "Prerna Chandak"
- },
- {
-  "Name": "Pritha Chakravarti"
- },
- {
-  "Name": "Priyanka Gurrala"
- },
- {
-  "Name": "Priyash Verma"
- },
- {
-  "Name": "Pulkit Jain"
- },
- {
-  "Name": "Pulkit Kumar "
- },
- {
-  "Name": "Rahul Mina "
- },
- {
-  "Name": "Rajesh Kashyap"
- },
- {
-  "Name": "Ramya Warrier "
- },
- {
-  "Name": "Rashi Kumar"
- },
- {
-  "Name": "RENUKA L"
- },
- {
-  "Name": "Riddhi Johri"
- },
- {
-  "Name": "Ritesh Kumar"
- },
- {
-  "Name": "Ritu Vaja"
- },
- {
-  "Name": "Rohit Dharia"
- },
- {
-  "Name": "Rohit Sevalkar"
- },
- {
-  "Name": "Rohith Kumar Reddy"
- },
- {
-  "Name": "Rudresh Rai"
- },
- {
-  "Name": "Rupantar Choudhury"
- },
- {
-  "Name": "Saatwik Suman"
- },
- {
-  "Name": "Sachin Kumar "
- },
- {
-  "Name": "Safa Fathim"
- },
- {
-  "Name": "Sai Shubham "
- },
- {
-  "Name": "Saineeth"
- },
- {
-  "Name": "Sakshi Jagtap"
- },
- {
-  "Name": "Sakshi Sawai"
- },
- {
-  "Name": "SAMBIT SAHOO"
- },
- {
-  "Name": "Sameer Khan Mehar"
- },
- {
-  "Name": "Sanchit Mittal"
- },
- {
-  "Name": "Sanskar Anil Nalkande "
- },
- {
-  "Name": "Saransh Chaudhary"
- },
- {
-  "Name": "Sayan Biswas"
- },
- {
-  "Name": "Shashwat "
- },
- {
-  "Name": "Shashwat Parashar "
- },
- {
-  "Name": "Shaurav Bhattacharyya"
- },
- {
-  "Name": "Shivam Chaudhary "
- },
- {
-  "Name": "Shivam Rai"
- },
- {
-  "Name": "Shreya Kapoor"
- },
- {
-  "Name": "Shreyas Chaudhari"
- },
- {
-  "Name": "Shreyash Agrawal"
- },
- {
-  "Name": "Shridhar Pawar"
- },
- {
-  "Name": "Shubham kumar"
- },
- {
-  "Name": "Shubham Verma"
- },
- {
-  "Name": "Smriti Saini"
- },
- {
-  "Name": "Sneha Sawale"
- },
- {
-  "Name": "Snehal Gohad"
- },
- {
-  "Name": "Snehal R. Shelke"
- },
- {
-  "Name": "Soham "
- },
- {
-  "Name": "Soham Shirodkar"
- },
- {
-  "Name": "Somesh Pratap Singh"
- },
- {
-  "Name": "Sourav Yadav"
- },
- {
-  "Name": "Sreyoshi Das"
- },
- {
-  "Name": "Srinivas Amgoth"
- },
- {
-  "Name": "Sudipta "
- },
- {
-  "Name": "Surabhi Menon"
- },
- {
-  "Name": "Tamma Sowmya Sri"
- },
- {
-  "Name": "Tushar Gupta"
- },
- {
-  "Name": "Umang Agrawal "
- },
- {
-  "Name": "Varun Barala"
- },
- {
-  "Name": "Vishal Kumar"
- },
- {
-  "Name": "Vishnu Sai"
- },
- {
-  "Name": "Vishwaraj"
- },
- {
-  "Name": "Vridhi Rohira"
- },
- {
-  "Name": "Yash More"
- },
- {
-  "Name": "Zainul Khan"
- }
-]
+    "Aakshi gautam"	,
+    "Abhilasha Hazarika"	,
+    "Abhishek Yawalkar"	,
+    "Achal Kanojia"	,
+    "Aditi bhargava"	,
+    "Aditya Shakya"	,
+    "Ahhie Megha"	,
+    "Akshay Chourasiya"	,
+    "Alok Pradhan "	,
+    "Amey Bait"	,
+    "Amisha Rastogi"	,
+    "Amitesh "	,
+    "Aniket G Lakhpati"	,
+    "Aniket Rajnish"	,
+    "Aniket Walekar"	,
+    "Anjali Milind Gawai"	,
+    "Ankit Dhiman "	,
+    "Ankita Jamane "	,
+    "Ankita Kumari Jain"	,
+    "Ankita Yadav"	,
+    "Arjun Yadav"	,
+    "Arushi Arnav"	,
+    "Aryamann Tomar"	,
+    "Aryan Shah"	,
+    "Ashu"	,
+    "Avinash Kumar"	,
+    "Ayush Anand"	,
+    "Ayush Srivastava"	,
+    "Ayushi Bhatt"	,
+    "Bhanu Prasad "	,
+    "Chaitanya Guntoorkar"	,
+    "Chanchal Sharma"	,
+    "Chetansinh Chauhan"	,
+    "Chitranjan Kumar Jha"	,
+    "Darsana J Varier"	,
+    "Deeksha Gautam"	,
+    "Deepak Singh"	,
+    "Dhanashree Ingale"	,
+    "Dheeraj Kumar"	,
+    "Dhruv Darda"	,
+    "Divyanshu Meena"	,
+    "Fulmoni Munda "	,
+    "G B Harsha Vardhan"	,
+    "Gayatri Nerpagar "	,
+    "Girivendra Pratap Yadav"	,
+    "Gopika"	,
+    "Harsh Dudhatra"	,
+    "Harsh Mandalia"	,
+    "Harshavardhan Naik"	,
+    "Harshil Purohit"	,
+    "Himanshu Singhal "	,
+    "Hiten Ferwani "	,
+    "Hitesh Kumar "	,
+    "Hitesh Pradhan"	,
+    "Ishan Prayagi"	,
+    "Jayasurya Nalamolu"	,
+    "Jitender ( Jiten Singh )"	,
+    "K Nandana Dilip"	,
+    "Kaushik Kangsabanik"	,
+    "Keshav Kumar Verma"	,
+    "Khantil Patel"	,
+    "Koushik Chandra Chenna "	,
+    "Likhita Baswani"	,
+    "Madhusmita Ray"	,
+    "Malavika"	,
+    "Manas Mulpuri"	,
+    "Md Amir Shohail"	,
+    "Meet Bavaria"	,
+    "Meet Thumar"	,
+    "Mekala Rishitha Ravi "	,
+    "Mihir Chauhan "	,
+    "Mihir Chauhan "	,
+    "Mohammad Asim"	,
+    "Mohd Umair Iqbal"	,
+    "Mrunal"	,
+    "Murshid Husain"	,
+    "Nachiket Pradhan"	,
+    "Namrata Goyal "	,
+    "Naveen Kumar"	,
+    "Nikhil"	,
+    "Nikita"	,
+    "NILABHRA ADHIKARY"	,
+    "Nilachal Chakrabarti"	,
+    "Nisha Singla"	,
+    "Nishank Chauhan"	,
+    "Paarth Sachan"	,
+    "Palak Wadhwa"	,
+    "Paras Jain"	,
+    "Patel Agam"	,
+    "Patel Rajan Girishbhai "	,
+    "Patel Vashisth "	,
+    "Pradnya Pise"	,
+    "Praisy David"	,
+    "Pranav Kanwat"	,
+    "Prateek Kumar Jha"	,
+    "Prerna Chandak"	,
+    "Pritha Chakravarti"	,
+    "Priyanka Gurrala"	,
+    "Priyash Verma"	,
+    "Pulkit Jain"	,
+    "Pulkit Kumar "	,
+    "Rahul Mina "	,
+    "Rajesh Kashyap"	,
+    "Ramya Warrier "	,
+    "Rashi Kumar"	,
+    "RENUKA L"	,
+    "Riddhi Johri"	,
+    "Ritesh Kumar"	,
+    "Ritu Vaja"	,
+    "Rohit Dharia"	,
+    "Rohit Sevalkar"	,
+    "Rohith Kumar Reddy"	,
+    "Rudresh Rai"	,
+    "Rupantar Choudhury"	,
+    "Saatwik Suman"	,
+    "Sachin Kumar "	,
+    "Safa Fathim"	,
+    "Sai Shubham "	,
+    "Saineeth"	,
+    "Sakshi Jagtap"	,
+    "Sakshi Sawai"	,
+    "SAMBIT SAHOO"	,
+    "Sameer Khan Mehar"	,
+    "Sanchit Mittal"	,
+    "Sanskar Anil Nalkande "	,
+    "Saransh Chaudhary"	,
+    "Sayan Biswas"	,
+    "Shashwat "	,
+    "Shashwat Parashar "	,
+    "Shaurav Bhattacharyya"	,
+    "Shivam Chaudhary "	,
+    "Shivam Rai"	,
+    "Shreya Kapoor"	,
+    "Shreyas Chaudhari"	,
+    "Shreyash Agrawal"	,
+    "Shridhar Pawar"	,
+    "Shubham kumar"	,
+    "Shubham Verma"	,
+    "Smriti Saini"	,
+    "Sneha Sawale"	,
+    "Sneha Sawale"	,
+    "Sneha Sawale"	,
+    "Snehal Gohad"	,
+    "Snehal R. Shelke"	,
+    "Soham "	,
+    "Soham Shirodkar"	,
+    "Somesh Pratap Singh"	,
+    "Sourav Yadav"	,
+    "Sreyoshi Das"	,
+    "Srinivas Amgoth"	,
+    "Sudipta "	,
+    "Surabhi Menon"	,
+    "Tamma Sowmya Sri"	,
+    "Tamma Sowmya Sri"	,
+    "Tushar Gupta"	,
+    "Umang Agrawal "	,
+    "Varun Barala"	,
+    "Vishal Kumar"	,
+    "Vishnu Sai"	,
+    "Vishwaraj"	,
+    "Vridhi Rohira"	,
+    "Yash More"	,
+    "Zainul Khan"	
+    ]

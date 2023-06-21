@@ -4,6 +4,7 @@ import names from '../data/name.json'
 import './CSS/card.css'
 import {dict} from './imgLinkData'
 import NameBioData from '../data/NameBioData'
+import { EmailNamesData } from "./EmailNamesdata"
 
 export default function ActionAreaCard(props) {
   function specialProfile(){
@@ -28,13 +29,14 @@ export default function ActionAreaCard(props) {
     specialProfile();
   },[])
   function findName(mail){
-		let ind = mails.indexOf(mail)
-		let name = names[ind]
-		return name
+		// let ind = mails.indexOf(mail)
+		// let name = names[ind]
+		// return name
+    return EmailNamesData[mail];
 	}
   function findBio(mail){
-		let ind = mails.indexOf(mail)
-    let name = names[ind]
+		// let ind = mails.indexOf(mail)
+    let name = EmailNamesData[mail];
     let bio="";
     for(let i=0;i<161;i++)
     {

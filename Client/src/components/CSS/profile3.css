@@ -322,6 +322,15 @@
     }
 }
 @media all and (max-width:479px) {
+    .student-friend-Message{
+        padding: 3vw 3.8vw 3.8vw 3.8vw;
+        margin: 1vw 2vw;
+        font-size: 0.8rem;
+    }
+    .student-profile-photo-circle{
+        height: 40px;
+        width: 40px;
+    }
     .profile-box{
         height: 85%;
         margin-top: 75px;
