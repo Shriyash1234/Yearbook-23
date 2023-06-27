@@ -39,7 +39,18 @@ const PhotoGallery = () => {
       console.error('Error fetching photos:', error);
     }
   };
-  
+  function toggleDisplay(){
+    const ele = document.getElementsByClassName('upload-photo')[0]
+
+    if(ele.style.display === 'none')
+    {
+        ele.style.display = 'flex'
+    }
+    else
+    {
+        ele.style.display = 'none'
+    }
+}
 
   const handleImageLoad = (photoId) => {
     setPhotos(prevPhotos => {
@@ -61,6 +72,7 @@ const PhotoGallery = () => {
     <div>
       <Header/>
       <Navbar/>
+      <button className='toggleDisplay' onClick={toggleDisplay}>T</button>
       {isLoading ? (
           <p>Loading...</p>
         ) : (

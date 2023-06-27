@@ -24,11 +24,25 @@ function Students(){
         .then(response => response.json())
         .then(data =>setProfiles(data));
     }, []);
-
+    function toggleDisplay(){
+        const ele = document.getElementsByClassName('upload-photo-message')[0]
+        const ele2 = document.getElementById('message-form')
+        if(ele.style.display === 'none')
+        {
+            ele.style.display = 'flex'
+            ele2.style.display = 'flex'
+        }
+        else
+        {
+            ele.style.display = 'none'
+            ele2.style.display = 'none'
+        }
+    }
     return(
         <div>
         <Header func={SetTheName}/>
         <Sidebar/>
+        <button className='toggleDisplay' onClick={toggleDisplay}>T</button>
         <div className='build' onClick={handleButtonClick}>Build your Profile</div>
         <div className='inactive' onClick={handleButtonClick}>+</div>
             <div className='cards'>
@@ -56,8 +70,7 @@ function Students(){
             }
             <PhotoUploaderProfile />
             <div id='build'></div>
-            </div>
-            
+            </div>     
         </div>
     )
 }

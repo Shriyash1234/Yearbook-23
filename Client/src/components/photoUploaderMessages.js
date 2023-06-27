@@ -46,7 +46,7 @@ const PhotoUploaderMessages = (props) => {
 
   return (
     <div className='upload-photo-message'>
-    <form method='post' id='message-form'>
+    <form method='post' id='message-form' className='juinor-response'>
       <input type="file" className="textField" onChange={handleFileChange} />
       <input type='text' name='email' id='email' style={{display:'none'}} onChange={handleEmailChange} value={props.mail}></input>
       <button className='buttonn' onClick={handleUpload} disabled={uploading}>

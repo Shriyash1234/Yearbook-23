@@ -149,10 +149,32 @@ function Profile(props){
         function funct(link){
             return dict[link]
         }
-            
+    
+    //function to toggle display of forms    
+    function toggleDisplay(){
+        const ele = document.getElementById('message-form')
+        const ele2 = document.getElementsByClassName('juinor-response')[0]
+        const ele3 = document.getElementsByClassName('juinor-response')[1]
+        const ele4 = document.getElementsByClassName('upload-photo-message')[0]
+        if(ele.style.display === 'none')
+        {
+            ele.style.display = 'flex'
+            ele2.style.display = 'flex'
+            ele3.style.display = 'flex'
+            ele4.style.display = 'flex'
+        }
+        else
+        {
+            ele.style.display = 'none'
+            ele2.style.display = 'none'
+            ele3.style.display = 'none'
+            ele4.style.display = 'none'
+        }
+    }
     return(
         <div>
             <div className='student-profile'>
+            <button className='toggleDisplay' onClick={toggleDisplay}>T</button>
                 <div className='profile-box'>
                     <div className='image-name-bio'>
                         <div className='img-box'>
@@ -265,7 +287,7 @@ function Profile(props){
                                     </div>
                             )})
                         }
-                        <form action='https://studentsiitgn.onrender.com/Yearbook23/addjuniorresponse' method='post' id='message-form'>
+                        <form action='https://studentsiitgn.onrender.com/Yearbook23/addjuniorresponse' method='post' className='juinor-response' id='message-form'>
                             <input type='text' name='message' id='message' placeholder="Add A Message" ></input>
                             <div className={userName || name ? 'input-fields hidden' : 'input-fields'}>
                                     <input type='text' name='name' id='name' placeholder="Your Name" value={myState.name || userName || name} />

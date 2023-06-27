@@ -139,7 +139,7 @@ em{
     width: 90%;
 }  
 #message-form{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
 }

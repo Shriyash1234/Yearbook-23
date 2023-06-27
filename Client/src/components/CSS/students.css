@@ -32,6 +32,22 @@ a{
 .MuiCardMedia-root{
     border-radius: 15px;
 }
+.toggleDisplay{
+    position: fixed;
+    background-color: #0b1d26;
+    z-index: 10000;
+    bottom: 0px;
+    left: 0px;
+    color: #0b1d26;
+    border: 0px;
+    font-size: 10px
+}
+.upload-photo-message{
+    display: none;
+}
+.upload-photo{
+    display: none;
+}
 @media all and (max-width:768px) {
     .cards{
         padding-left: 0px;
