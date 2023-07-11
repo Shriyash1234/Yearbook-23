@@ -26,7 +26,7 @@ All students page
 
 Student profile page
 
-![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/0798b8de-8f8a-4fd3-936f-a6dc1d3f4e79)
+![image](https://github.com/Shriyash1234/Yearbook-23/assets/105843099/11592e4f-bd26-4d7f-a659-b8169523ae79)
 
 Memorylane page
 
