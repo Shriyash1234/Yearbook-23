@@ -4,9 +4,9 @@ Official website of yearbook 2023 (IIT Gandhinagar)
 Technologies used:
 1. React.js, and its libararies for frontend
 
-3.Nodejs:Express for the backend
+2. Nodejs:Express for the backend
 
-4.Database:MongoDB,Json data
+3. Database:MongoDB,Json data
 
 Hosted using cpanel at: https://students.iitgn.ac.in/yearbook/2023 
 Backend is hosted on render.
